@@ -1,0 +1,18 @@
+@import "../styles/variables.scss";
+
+@layer utilities {
+    $logo-img-dimension: 30px;
+    .navbar {
+        &__logo {
+            display: flex;
+            align-items: center;
+            color: $primary-color;
+
+            img {
+                width: $logo-img-dimension;
+                height: $logo-img-dimension;
+                margin-right: 10px;
+            }
+        }
+    }
+}
