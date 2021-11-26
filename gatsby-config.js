@@ -7,6 +7,8 @@
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -23,7 +25,13 @@ module.exports = {
         icon: 'src/images/logo.jpg',
       },
     },
-    `gatsby-plugin-react-helmet`
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`,
+      },
+    }
   ],
   siteMetadata: {
     title: 'Frontend Docs'
