@@ -22,7 +22,8 @@ module.exports = {
         name: 'Frontend Docs',
         icon: 'src/images/logo.jpg',
       },
-    }
+    },
+    `gatsby-plugin-react-helmet`
   ],
   siteMetadata: {
     title: 'Frontend Docs'
