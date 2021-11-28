@@ -14,7 +14,7 @@ export default function ArticleDetails({ data }) {
     <GeneralLayout>
       <article className={styles.article}>
         <h1>{title}</h1>
-        <p><i>{description}</i></p>
+        <p className={styles.article__description}><i>{description}</i></p>
         <div className='mt-4' dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </GeneralLayout>

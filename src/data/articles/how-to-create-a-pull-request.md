@@ -6,8 +6,64 @@ tag: HTML & CSS
 slug: how-to-create-a-pull-request
 ---
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+### What is the Pull Request?
 
-### Lorem ninja ipsum dolor
+**Pull requests** let you tell others about changes you've pushed to a branch. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+You can open a **Pull Request** at any point during the development process: when you have little
+or no code but want to share some screenshots or general ideas, when you're stuck and need
+help or advice, or when you're ready for someone to review your work.
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+### How to create a Pull request?
+
+- Choose your branch and the targeted branch (be careful)
+- You need to support your pull request with a suitable title.
+- Description to be as following (below is a template you can copy):
+
+> [^1] [Pull Request Description]
+>
+> \### Please check options that are relevant
+>
+> [ ] Bug fix (non-breaking change which fixes an issue)
+>
+> [ ] New feature (non-breaking change which adds functionality)
+>
+> [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+>
+> [ ] This change requires a documentation update
+>
+> [ ] Code Enhancements
+>
+> \### Covered Business [JIRA-TICKET]
+>
+> [ ] ----
+>
+> \### Known Bugs
+>
+> - Cover Photo not supporting repositioning at this pull request
+>
+> \### Impacts
+>
+> - Cover Photo at Pages, Group, and Profile Pages need to be retested.
+>
+> \### Code Checklist
+>
+> [ ] Your code builds clean without any errors or warnings.
+>
+> [ ] Your code supporting **Arabic** (Styles && Translation).
+>
+> [ ] Your style following **BEM** Methodology.
+>
+> [ ] Your Style Supporting **Mobile First**.
+>
+> \### Screenshot if it available
+
+- In the first line [^1], you're supposed to write a description to add more clarification to the Reviewer.
+- Choose at least one of the choices under **(Please check options that are relevant)**, to mention if we need from quality team to re-test any impact that may be caused by these changes.
+- Mention the business that you applied in this pull request if not mentioned in **JIRA**.
+- Mention if there is any known **bug** or any **impact** to notify the quality team.
+- Follow **Checklist** point by point and apply it as much as you can.
+- For **Mobile-First Approach**, you can achieve this by writing down your styles for mobile, then use (min-width) to target desktop resolution.
+    - Our Reference for breakpoints is [Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/).
+
+  
+**Example:** https://github.com/elmenus/fdm-frontend/pull/1045 

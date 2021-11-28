@@ -40,8 +40,37 @@
     }
 
     p {
-      color: $gray-300;
       margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    ul,
+    ol {
+      list-style: disc;
+      margin: 0 1rem;
+    }
+
+    blockquote {
+      margin: 1rem 0;
+      background-color: $gray-100;
+      padding: 1rem;
+      border-radius: 0.25rem;
+    }
+
+    a {
+        color: $primary-color;
+        text-decoration: underline;
+    }
+
+    &__description {
+      color: $gray-300;
     }
   }
 }
