@@ -1,9 +1,9 @@
 @import "./variables.scss";
 
 @layer utilities {
-    .layout {
-        & > * {
-            z-index: $content-z-index;
-        }
+  .layout {
+    & > * {
+      z-index: $content-z-index;
     }
+  }
 }
