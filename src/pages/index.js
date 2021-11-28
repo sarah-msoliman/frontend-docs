@@ -10,8 +10,7 @@ import * as styles from "../styles/home.module.scss"
 
 export default function Home({ data }) {
   const { title } = data.metaData.siteMetadata
-  const { articles } = data.articles.nodes[0].childDataJson
-
+  const articles = data.articles.nodes
   return (
     <GeneralLayout>
       <Helmet>
@@ -44,14 +43,14 @@ export const query = graphql`
         title
       }
     }
-    articles: allFile {
+    articles: allMarkdownRemark {
       nodes {
-        childDataJson {
-          articles {
-            title
-            icon
-            url
-          }
+        frontmatter {
+          title
+          icon
+          description
+          tag
+          slug
         }
       }
     }
