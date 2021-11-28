@@ -2,14 +2,17 @@
     "articles": [
         {
             "title": "How to Create A Pull Request",
-            "icon": ""
+            "icon": "ClipboardListIcon",
+            "url": "how-to-create-a-pull-request"
         },
         {
             "title": "How to Contribute?",
-            "icon": ""
+            "url": "how-to-contribute"
         },
         {
-            "title": "Frontend Environment Setup"
+            "title": "Frontend Environment Setup",
+            "icon": "CogIcon",
+            "url": "frontend-enviroment-setup"
         }
     ]
 }

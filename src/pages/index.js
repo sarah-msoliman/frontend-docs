@@ -50,6 +50,7 @@ export const query = graphql`
           articles {
             title
             icon
+            url
           }
         }
       }
