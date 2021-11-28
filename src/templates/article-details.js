@@ -5,7 +5,7 @@ import GeneralLayout from "../layouts/GeneralLayout"
 
 import * as styles from "../styles/article.module.scss"
 
-export default function ProjectDetails({ data }) {
+export default function ArticleDetails({ data }) {
   const { html } = data.markdownRemark
   const { title, description, tag, slug } =
     data.markdownRemark.frontmatter
@@ -13,8 +13,8 @@ export default function ProjectDetails({ data }) {
   return (
     <GeneralLayout>
       <article className={styles.article}>
-        <h1 className="text-4xl font-bold mb-4">{title}</h1>
-        <h3 className={`${styles.article__description} text-l`}>{description}</h3>
+        <h1>{title}</h1>
+        <p><i>{description}</i></p>
         <div className='mt-4' dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </GeneralLayout>
