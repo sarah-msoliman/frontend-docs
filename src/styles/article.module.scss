@@ -1,0 +1,7 @@
+@import "./variables.scss";
+
+.article {
+  &__description {
+      color: $gray-300;
+  }
+}

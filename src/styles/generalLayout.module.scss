@@ -2,8 +2,5 @@
 
 @layer utilities {
   .layout {
-    & > * {
-      z-index: $content-z-index;
-    }
   }
 }
