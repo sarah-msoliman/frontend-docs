@@ -3,16 +3,19 @@
         {
             "title": "How to Create A Pull Request",
             "icon": "ClipboardListIcon",
-            "url": "how-to-create-a-pull-request"
+            "url": "how-to-create-a-pull-request",
+            "description": "How to Create A Pull Request Description"
         },
         {
             "title": "How to Contribute?",
-            "url": "how-to-contribute"
+            "url": "how-to-contribute",
+            "description": "How to Contribute Description"
         },
         {
             "title": "Frontend Environment Setup",
             "icon": "CogIcon",
-            "url": "frontend-enviroment-setup"
+            "url": "frontend-enviroment-setup",
+            "description": "Frontend Environment SetupDescription"
         }
     ]
 }

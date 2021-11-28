@@ -7,7 +7,7 @@ import {
 
 import * as styles from "../../styles/card.module.scss"
 
-export default function Card({ id, data }) {
+export default function Card({ data }) {
   const iconClassName = "h-5 w-5"
   return (
     <div className={`${styles.card} p-5`}>
@@ -23,6 +23,7 @@ export default function Card({ id, data }) {
         </span>
         {data.title}
       </h3>
+      <p className="mt-4">{data.description}</p>
     </div>
   )
 }
