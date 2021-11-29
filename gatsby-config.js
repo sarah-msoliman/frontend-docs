@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Frontend Docs',
-        icon: 'src/images/logo.jpg',
+        name: "Frontend Docs",
+        icon: "src/images/logo.jpg",
       },
     },
     {
@@ -31,9 +31,12 @@ module.exports = {
         name: `data`,
         path: `${__dirname}/src/data/articles`,
       },
-    }
+    },
   ],
   siteMetadata: {
-    title: 'Frontend Docs'
-  }
+    title: "Ninjas' Hub",
+    heroTitle: "Docs",
+    heroSubtitle:
+      "elmenus Frontend Chapter documentation. Everything you need to know about our Repos, Guidlines, Docs & Sessions..."
+  },
 }
