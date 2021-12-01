@@ -4,11 +4,11 @@ import Navbar from "../../components/Navbar"
 
 import * as styles from "../../styles/generalLayout.module.scss"
 
-export default function Layout({ children }) {
+export default function GeneralLayout({ children }) {
   return (
-    <div className={`${styles.layout} container mx-auto`}>
+    <div className="container">
       <Navbar />
-      <div className="general-layout__content pb-4 lg:pb-8 px-4 lg:px-8">{children}</div>
+      <div className={`p-4 ${styles.generalLayout__content}`}>{children}</div>
     </div>
   )
 }

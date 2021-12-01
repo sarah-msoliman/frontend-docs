@@ -1,4 +1,4 @@
-$primary-color:#e5533a;
+$primary-color: #e5533a;
 $orange--100: #ffebdc;
 $orange--200: #febe8b;
 $orange--300: #f66d00;
@@ -7,3 +7,11 @@ $gray-300: #6d6e70;
 $white: #ffffff;
 
 $content-z-index: 2;
+
+%container {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+}

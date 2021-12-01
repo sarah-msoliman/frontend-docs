@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+@layer utilities {
+  .featured {
+    color: $white;
+    padding-top: 60%;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: linear-gradient(
+        to top,
+        rgba(33, 38, 49, 0.3) 0%,
+        transparent 100%
+      );
+      z-index: 0;
+    }
+  }
+}

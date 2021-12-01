@@ -1,7 +1,9 @@
 ---
 title: How to Contribute?
 description: How to Contribute Description
+img: "https://preview.colorlib.com/theme/webmag/img/xpost-1.jpg.pagespeed.ic.2GXRfHYjOg.webp"
 tag: HTML & CSS
+featured: true
 slug: how-to-contribute
 ---
 

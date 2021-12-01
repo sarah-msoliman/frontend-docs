@@ -34,9 +34,6 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Ninjas' Hub",
-    heroTitle: "Docs",
-    heroSubtitle:
-      "elmenus Frontend Chapter documentation. Everything you need to know about our Repos, Guidlines, Docs & Sessions..."
+    title: "Ninjas' Hub"
   },
 }

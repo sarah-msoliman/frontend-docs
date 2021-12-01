@@ -6,12 +6,11 @@ import * as styles from "../../styles/navbar.module.scss"
 export default function Navbar() {
   return (
     <header>
-      <nav className={`${styles.navbar} p-4 lg:p-8`}>
+      <nav className={`${styles.navbar} p-4`}>
         <Link to="/">
-          <h1 className={`${styles.navbar__logo} text-2xl font-bold`}>
-            <img src="/logo.jpg" />
-            Ninjas
-          </h1>
+          <p className={`${styles.navbar__logo} text-2xl`}>
+            Ninjas<strong>Hub</strong>
+          </p>
         </Link>
       </nav>
     </header>

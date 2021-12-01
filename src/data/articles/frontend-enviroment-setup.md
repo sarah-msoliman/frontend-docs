@@ -1,7 +1,8 @@
 ---
 title: Frontend Environment Setup
-icon: CogIcon
 description: Frontend Environment SetupDescription
+img: "https://preview.colorlib.com/theme/webmag/img/xpost-1.jpg.pagespeed.ic.2GXRfHYjOg.webp"
+featured: false
 tag: HTML & CSS
 slug: frontend-enviroment-setup
 ---
