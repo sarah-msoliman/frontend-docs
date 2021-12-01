@@ -4,6 +4,7 @@
   .featured {
     color: $white;
     padding-top: 60%;
+    background-color: $orange--100;
     &::after {
       content: "";
       position: absolute;

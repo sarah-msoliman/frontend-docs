@@ -1,7 +1,6 @@
 ---
 title: How to Contribute?
 description: How to Contribute Description
-img: "../../images/test.jpg"
 tag: HTML & CSS
 featured: true
 slug: how-to-contribute
