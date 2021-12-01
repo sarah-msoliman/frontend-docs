@@ -9,6 +9,9 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -32,8 +35,15 @@ module.exports = {
         path: `${__dirname}/src/data/articles`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
   ],
   siteMetadata: {
-    title: "Ninjas' Hub"
+    title: "Ninjas' Hub",
   },
 }

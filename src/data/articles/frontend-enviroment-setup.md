@@ -1,7 +1,7 @@
 ---
 title: Frontend Environment Setup
 description: Frontend Environment SetupDescription
-img: "https://preview.colorlib.com/theme/webmag/img/xpost-1.jpg.pagespeed.ic.2GXRfHYjOg.webp"
+img: "../../images/test.jpg"
 featured: false
 tag: HTML & CSS
 slug: frontend-enviroment-setup

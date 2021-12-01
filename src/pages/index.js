@@ -39,7 +39,11 @@ export const query = graphql`
         frontmatter {
           title
           description
-          img
+          img {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
           slug
           tag
         }
@@ -52,7 +56,11 @@ export const query = graphql`
         frontmatter {
           title
           description
-          img
+          img {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
           slug
           tag
         }

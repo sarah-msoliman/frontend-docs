@@ -1,7 +1,7 @@
 ---
 title: How to Create A Pull Request
 description: How to Create A Pull Request Description
-img: "https://preview.colorlib.com/theme/webmag/img/xpost-1.jpg.pagespeed.ic.2GXRfHYjOg.webp"
+img: "../../images/test.jpg"
 featured: true
 tag: HTML & CSS
 slug: how-to-create-a-pull-request
