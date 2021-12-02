@@ -1,15 +1,17 @@
 @layer utilities {
   .articleListing {
-    a {
-      width: 100%;
-      margin-bottom: 1rem;
-      &:not(:last-child) {
-        @media (min-width: 1024px) {
-          margin-right: 1rem;
+    &__featured {
+      a {
+        width: 100%;
+        margin-bottom: 1rem;
+        &:not(:last-child) {
+          @media (min-width: 1024px) {
+            margin-right: 1rem;
+          }
         }
-      }
-      @media (min-width: 1024px) {
-        width: 48%;
+        @media (min-width: 1024px) {
+          width: 48%;
+        }
       }
     }
   }
