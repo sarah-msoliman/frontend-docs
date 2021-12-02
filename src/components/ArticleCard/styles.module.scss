@@ -10,6 +10,19 @@
       padding-top: 60%;
       position: relative;
     }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      span {
+        text-transform: uppercase;
+        background-color: $orange--300;
+        padding: 3px 10px;
+        color: $white;
+      }
+      p {
+        color: $gray-300;
+      }
+    }
 
     @media (min-width: 768px) {
       width: 47%;

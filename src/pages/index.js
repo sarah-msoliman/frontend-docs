@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
+import "@fontsource/nunito"
 
 import GeneralLayout from "../layouts/GeneralLayout"
 import ArticlesListing from "../components/ArticlesListing"
@@ -44,6 +45,7 @@ export const query = graphql`
               gatsbyImageData(placeholder: BLURRED)
             }
           }
+          date
           slug
           tag
         }
@@ -61,6 +63,7 @@ export const query = graphql`
               gatsbyImageData(placeholder: BLURRED)
             }
           }
+          date
           slug
           tag
         }

@@ -1,6 +1,8 @@
 ---
 title: How to Contribute?
 description: How to Contribute Description
+img: "../../images/contribute.jpg"
+date: "Sep 14, 2021"
 tag: HTML & CSS
 featured: true
 slug: how-to-contribute

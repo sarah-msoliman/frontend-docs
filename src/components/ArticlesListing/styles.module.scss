@@ -1,3 +1,5 @@
+@import "../../styles//variables.scss";
+
 @layer utilities {
   .articleListing {
     &__featured {
@@ -13,6 +15,10 @@
           width: 48%;
         }
       }
+    }
+
+    &__sectionTitle {
+      color: $primary-color;
     }
   }
 }

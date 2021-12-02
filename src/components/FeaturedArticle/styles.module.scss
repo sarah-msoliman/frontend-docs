@@ -18,5 +18,17 @@
       );
       z-index: 0;
     }
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      span {
+        text-transform: uppercase;
+        background-color: $orange--300;
+        padding: 3px 10px;
+      }
+      p {
+        color: $gray-100
+      }
+    }
   }
 }

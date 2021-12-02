@@ -1,9 +1,9 @@
 ---
 title: How to Create A Pull Request
 description: How to Create A Pull Request Description
-img: "../../images/test.jpg"
+img: "../../images/pull-requests.png"
 featured: true
-tag: HTML & CSS
+tag: Pull Requests
 slug: how-to-create-a-pull-request
 ---
 

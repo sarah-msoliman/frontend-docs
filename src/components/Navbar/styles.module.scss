@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+@layer utilities {
+  $logo-img-dimension: 30px;
+  .header {
+    box-shadow: 0 -1px 0 0 $gray-100 inset;
+
+    &__nav {
+      @extend %container;
+    }
+
+    &__logo {
+      color: $primary-color;
+      border-right: 1px solid $gray-100;
+      width: fit-content;
+      strong {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

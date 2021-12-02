@@ -1,7 +1,8 @@
 ---
 title: Frontend Environment Setup
 description: Frontend Environment SetupDescription
-img: "../../images/test.jpg"
+img: "../../images/env-setup.png"
+date: "Sep 14, 2021"
 featured: false
 tag: HTML & CSS
 slug: frontend-enviroment-setup

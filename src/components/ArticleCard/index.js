@@ -14,16 +14,23 @@ export default function Card({ data }) {
             <GatsbyImage
               image={image}
               alt={data.slug}
-              className="absolute inset-0 w-full"
+              className="absolute inset-0 w-full rounded"
             />
           ) : (
-            <StaticImage src="../../images/default.jfif" className="absolute inset-0 w-full" />
+            <StaticImage
+              src="../../images/default.jfif"
+              className="absolute inset-0 w-full rounded"
+            />
           )}
         </div>
       </Link>
 
       <div className="py-4">
-        <h3>{data.title}</h3>
+        <div className={`text-sm mb-4 ${styles.card__wrapper}`}>
+          <span className="mr-2 rounded-sm">{data.tag}</span>
+          <p>{data.date}</p>
+        </div>
+        <h3 className="font-bold">{data.title}</h3>
       </div>
     </div>
   )
