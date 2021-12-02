@@ -13,7 +13,7 @@ export default function ArticleDetails({ data }) {
     <ArticleLayout>
       <article className={styles.article}>
         <div className="flex items-center">
-          <h1 className={`m-0 ${styles.article__title}`}>{title}</h1>
+          <h1 className={`${styles.article__title}`}>{title}</h1>
           <span className={`ml-4 text-sm rounded-sm ${styles.article__tag}`}>
             {tag}
           </span>
