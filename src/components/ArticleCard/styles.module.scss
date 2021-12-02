@@ -11,13 +11,8 @@
       position: relative;
     }
     &__wrapper {
-      display: flex;
-      align-items: center;
       span {
-        text-transform: uppercase;
-        background-color: $orange--300;
-        padding: 3px 10px;
-        color: $white;
+        @extend %tag;
       }
       p {
         color: $gray-300;

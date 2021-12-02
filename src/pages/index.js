@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import "@fontsource/nunito"
 
-import GeneralLayout from "../layouts/GeneralLayout"
+import HomeLayout from "../layouts/HomeLayout"
 import ArticlesListing from "../components/ArticlesListing"
 
 import "../styles/global.scss"
@@ -18,9 +18,9 @@ export default function Home({ data }) {
         <title>{title}</title>
       </Helmet>
 
-      <GeneralLayout>
+      <HomeLayout>
         <ArticlesListing featured={featuredArticles} articles={articles} />
-      </GeneralLayout>
+      </HomeLayout>
     </>
   )
 }
@@ -39,7 +39,6 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
-          description
           img {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED)
@@ -57,7 +56,6 @@ export const query = graphql`
       nodes {
         frontmatter {
           title
-          description
           img {
             childImageSharp {
               gatsbyImageData(placeholder: BLURRED)

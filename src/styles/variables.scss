@@ -8,10 +8,29 @@ $white: #ffffff;
 
 $content-z-index: 2;
 
-%container {
+%wide-container {
   width: 100%;
   @media (min-width: 768px) {
     width: 77%;
     margin: 0 auto;
   }
+}
+
+%narrow-container {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+%tag {
+  text-transform: uppercase;
+  background-color: $orange--300;
+  padding: 3px 10px;
+  color: $white;
+  height: fit-content;
 }

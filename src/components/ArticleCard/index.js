@@ -26,7 +26,7 @@ export default function Card({ data }) {
       </Link>
 
       <div className="py-4">
-        <div className={`text-sm mb-4 ${styles.card__wrapper}`}>
+        <div className={`text-sm mb-4 flex items-center ${styles.card__wrapper}`}>
           <span className="mr-2 rounded-sm">{data.tag}</span>
           <p>{data.date}</p>
         </div>

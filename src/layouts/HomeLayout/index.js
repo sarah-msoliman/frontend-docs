@@ -9,7 +9,7 @@ export default function GeneralLayout({ children }) {
     <div>
       <Navbar />
       <div className="container">
-        <div className={`p-8 md:px-0 md:py-16 ${styles.generalLayout__content}`}>
+        <div className={`p-8 md:px-0 md:py-16 ${styles.layout__content}`}>
           {children}
         </div>
       </div>

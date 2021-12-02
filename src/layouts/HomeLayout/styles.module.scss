@@ -1,9 +1,9 @@
 @import "../../styles/variables.scss";
 
 @layer utilities {
-  .generalLayout {
+  .layout {
     &__content {
-      @extend %container;
+      @extend %wide-container;
     }
   }
 }

@@ -20,7 +20,7 @@ export default function FeaturedArticle({ data }) {
         />
       )}
       <div className="absolute bottom-0 p-4 z-10">
-        <div className={`text-sm mb-4 ${styles.featured__wrapper}`}>
+        <div className={`text-sm mb-4 flex items-center ${styles.featured__wrapper}`}>
           <span className="mr-2 rounded-sm">{data.tag}</span>
           <p>{data.date}</p>
         </div>

@@ -1,6 +1,5 @@
 ---
 title: Frontend Environment Setup
-description: Frontend Environment SetupDescription
 img: "../../images/env-setup.png"
 date: "Sep 14, 2021"
 featured: false
