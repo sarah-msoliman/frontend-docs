@@ -15,9 +15,9 @@ export default function Navbar() {
         <Link to="/articles" activeClassName={styles.header_active}>
           <p className="text-base font-semibold p-4">Articles</p>
         </Link>
-        <Link to="/sessions" activeClassName={styles.header_active}>
+        {/* <Link to="/sessions" activeClassName={styles.header_active}>
           <p className="text-base font-semibold p-4">Sessions</p>
-        </Link>
+        </Link> */}
       </nav>
     </header>
   )
