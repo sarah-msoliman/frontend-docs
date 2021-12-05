@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Frontend Docs",
-        icon: "src/images/logo.jpg",
+        name: "Hub",
+        icon: "static/images/logo.jpg",
       },
     },
     {
@@ -40,7 +40,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `${__dirname}/static/images/Articles/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `default images`,
+        path: `${__dirname}/static/images/`,
       },
     },
     {

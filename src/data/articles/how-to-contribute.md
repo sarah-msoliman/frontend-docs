@@ -1,14 +1,48 @@
 ---
 title: How to Contribute?
-img: "../../images/contribute.jpg"
-date: "Sep 14, 2021"
-tag: HTML & CSS
+img: "../../../static/images/Articles/contribute.jpg"
+date: "Sep 06, 2021"
+tag: Repositories
 featured: true
 slug: how-to-contribute
 ---
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+We have 5 repositories till now:
 
-### Lorem ninja ipsum dolor
+1. **WEB**: [elmenus-web Github Repo](https://github.com/elmenus/elmenus-web)
+2. **CRM:** [crm-frontend Github Repo](https://github.com/elmenus/crm-frontend)
+3. **FDM:** [fdm-frontend Github Repo](https://github.com/elmenus/fdm-frontend)
+4. **Livetracker:** [livetracker-frontend Github Repo](https://github.com/elmenus/livetracker-frontend)
+5. **AB Testing Platform:** [ab-testing-platform-frontend Github Repo](https://github.com/elmenus/ab-testing-platform-frontend)
 
-Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.
+<br>
+
+You can contribute to any repository but you should follow the following points 😊:
+
+1. We have till this moment 3 main branches: **master**, **release**, and **dev** branches
+    - Each branch represents an environment, **Production**, **testing**, and **development** environments.
+2. You should create a new branch for *feature*/*bug*/*hotfix*/*rollback* or whatever you want to do from the **master** branch.
+3. It is prohibited to push your commits directly to the main branches.
+4. If you are ready to create a **new PR**, please read this document carefully [How to create a pull request](/articles/how-to-create-a-pull-request).
+5. You should create **two PRs** from your branch to merge your code into the **dev** branch and another one into the **release** branch.
+![PR Chart](/images/Articles/pull-request-chart.png)
+
+> 🛈 As a Contributor, you can create a PR from your branch to master too if your branch has an important feature, hotfix, or bug fix if it is **stable and bug-free** and **confirmed by the quality team**. 
+
+### For Reviewers
+- Once there is not any comment and you need to merge the **PR**, you should **squash** the commits before the merging, We can achieve that by choosing the “squash and merge“ option as following: 
+![Squash Commits](/images/Articles/squash-commits.png)
+This option will create one commit and its message will contain all commit messages that will be squashed: 
+![Commits](/images/Articles/commits.png)
+
+- You need as a reviewer to **delete the merged branch** for cleaning the git from unneeded branches.  
+
+> ⚠️ Don’t use the squash option when you want to merge a PR that merges code from *dev into release* or *release into master* and **vice versa**, for keeping the history.
+
+> 🛈 **Prerequisites**
+> 
+> To create normally a new branch from the master branch as the above points, we need to do the following:
+>
+> - Introducing the **Feature Toggle** concept in the frontend, for resolving a common issue. (If we have a disabled feature in production but not disabled in dev and testing env and we need to keep this decision) *(Raised By Heba Bahaa)*.
+>
+> - All hard-coded config ids (web-engage id, mix panel id, etc..) should be stored in environment variables to avoid any conflict in merging process with the main branches.

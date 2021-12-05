@@ -1,6 +1,6 @@
 ---
 title: How to Create A Pull Request
-img: "../../images/pull-requests.png"
+img: "../../../static/images/Articles/pull-requests.png"
 date: "Sep 14, 2021"
 featured: true
 tag: Pull Requests
