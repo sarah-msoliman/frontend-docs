@@ -1,0 +1,15 @@
+@import "../../styles/variables.scss";
+
+@layer utilities {
+  .card {
+    &__img {
+      padding-top: 10%;
+    }
+    &__tag {
+      @extend %tag;
+    }
+    &__date {
+      color: $gray-300;
+    }
+  }
+}
