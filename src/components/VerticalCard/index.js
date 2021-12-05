@@ -4,7 +4,7 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import * as styles from "./styles.module.scss"
 
-export default function Card({ data }) {
+export default function VerticalCard({ data }) {
   const image = getImage(data.img)
   return (
     <div className={`${styles.card}`}>

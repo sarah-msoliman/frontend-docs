@@ -1,7 +1,7 @@
 import React from "react"
 import HorizontalCard from "../HorizontalCard"
 
-export default function Listing({ data }) {
+export default function VerticalListing({ data }) {
   return (
     <div>
       {data.map((item, index) => (

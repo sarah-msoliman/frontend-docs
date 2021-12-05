@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import "@fontsource/nunito"
 
 import HomeLayout from "../layouts/HomeLayout"
-import ArticlesListing from "../components/ArticlesListing"
+import HorizontalListing from "../components/HorizontalListing"
 
 import "../styles/global.scss"
 
@@ -19,7 +19,7 @@ export default function Home({ data }) {
       </Helmet>
 
       <HomeLayout>
-        <ArticlesListing featured={featuredArticles} articles={articles} />
+        <HorizontalListing featured={featuredArticles} articles={articles} />
       </HomeLayout>
     </>
   )

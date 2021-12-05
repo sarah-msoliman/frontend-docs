@@ -4,7 +4,7 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 import * as styles from "./styles.module.scss"
 
-export default function FeaturedArticle({ data }) {
+export default function FeaturedCard({ data }) {
   const image = getImage(data.img)
   return (
     <Link to={"/articles/" + data.slug} className="w-full">

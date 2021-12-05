@@ -1,16 +1,16 @@
 import React from "react"
 
-import Card from "../ArticleCard"
-import FeaturedArticle from "../FeaturedArticle"
+import Card from "../VerticalCard"
+import FeaturedCard from "../FeaturedCard"
 
 import * as styles from "./styles.module.scss"
 
-export default function CardsListing({ featured, articles }) {
+export default function HorizontalListing({ featured, articles }) {
   return (
     <>
       <section className={`flex flex-wrap ${styles.articleListing__featured}`}>
         {featured.map((item, index) => (
-          <FeaturedArticle key={index} data={item.frontmatter} />
+          <FeaturedCard key={index} data={item.frontmatter} />
         ))}
       </section>
 
