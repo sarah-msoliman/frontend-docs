@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import ArticleLayout from "../../layouts/ArticleLayout"
+import ArticleLayout from "../../layouts/ArticleLayout";
 
-import * as styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss";
 
 export default function ArticleDetails({ data }) {
-  const { html } = data.markdownRemark
-  const { title, tag, date } = data.markdownRemark.frontmatter
+  const { html } = data.markdownRemark;
+  const { title, tag, date } = data.markdownRemark.frontmatter;
 
   return (
     <ArticleLayout>
@@ -22,7 +22,7 @@ export default function ArticleDetails({ data }) {
         <div className="mt-4" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </ArticleLayout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -36,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

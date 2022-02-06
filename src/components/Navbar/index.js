@@ -1,7 +1,7 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import * as styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss";
 
 export default function Navbar() {
   return (
@@ -20,5 +20,5 @@ export default function Navbar() {
         </Link> */}
       </nav>
     </header>
-  )
+  );
 }

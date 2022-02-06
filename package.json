@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "Front-end Hub",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Our frontend hub, source for our docs, sessions and articles.",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -25,10 +25,12 @@
     "gatsby-source-filesystem": "^4.3.0",
     "gatsby-transformer-remark": "^5.2.0",
     "gatsby-transformer-sharp": "^4.3.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.43.5"
+    "sass": "^1.43.5",
+    "sass-loader": "^12.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",

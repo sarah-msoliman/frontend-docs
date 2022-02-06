@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import Card from "../VerticalCard"
-import FeaturedCard from "../FeaturedCard"
+import Card from "../VerticalCard";
+import FeaturedCard from "../FeaturedCard";
 
-import * as styles from "./styles.module.scss"
+import * as styles from "./styles.module.scss";
 
 export default function HorizontalListing({ featured, articles }) {
   return (
@@ -27,5 +27,5 @@ export default function HorizontalListing({ featured, articles }) {
         ))}
       </section>
     </>
-  )
+  );
 }

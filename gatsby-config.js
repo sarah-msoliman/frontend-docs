@@ -3,7 +3,7 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
-require("dotenv").config()
+require("dotenv").config();
 
 module.exports = {
   /* Your site config here */
@@ -26,7 +26,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: "Hub",
-        icon: "static/images/logo.jpg",
+        icon: `${__dirname}/static/images/logo.jpg`,
       },
     },
     {
@@ -62,4 +62,4 @@ module.exports = {
   siteMetadata: {
     title: "Ninjas' Hub",
   },
-}
+};

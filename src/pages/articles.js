@@ -1,15 +1,15 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import { graphql } from "gatsby";
 
-import HomeLayout from "../layouts/HomeLayout"
-import VerticalListing from "../components/VerticalListing"
+import HomeLayout from "../layouts/HomeLayout";
+import VerticalListing from "../components/VerticalListing";
 
 export default function Articles({ data }) {
   return (
     <HomeLayout>
       <VerticalListing data={data.allArticles.nodes} />
     </HomeLayout>
-  )
+  );
 }
 
 export const query = graphql`
@@ -30,4 +30,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

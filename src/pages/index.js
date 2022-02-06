@@ -1,17 +1,18 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { Helmet } from "react-helmet"
-import "@fontsource/nunito"
+import React from "react";
+import { graphql } from "gatsby";
+import { Helmet } from "react-helmet";
+import "@fontsource/nunito";
 
-import HomeLayout from "../layouts/HomeLayout"
-import HorizontalListing from "../components/HorizontalListing"
+import HomeLayout from "../layouts/HomeLayout";
+import HorizontalListing from "../components/HorizontalListing";
 
-import "../styles/global.scss"
+import "normalize.css";
+import "../styles/global.scss";
 
 export default function Home({ data }) {
-  const { title } = data.metaData.siteMetadata
-  const featuredArticles = data.featured.nodes
-  const articles = data.articles.nodes
+  const { title } = data.metaData.siteMetadata;
+  const featuredArticles = data.featured.nodes;
+  const articles = data.articles.nodes;
   return (
     <>
       <Helmet>
@@ -22,7 +23,7 @@ export default function Home({ data }) {
         <HorizontalListing featured={featuredArticles} articles={articles} />
       </HomeLayout>
     </>
-  )
+  );
 }
 
 export const query = graphql`
@@ -68,4 +69,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

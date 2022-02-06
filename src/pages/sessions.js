@@ -1,7 +1,5 @@
-import React from "react"
+import React from "react";
 
 export default function Sessions() {
-  return (
-    <div>Hello, Articles</div>
-  )
+  return <div>Hello, Articles</div>;
 }
