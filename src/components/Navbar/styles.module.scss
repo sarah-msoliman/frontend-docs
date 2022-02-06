@@ -1,38 +1,9 @@
-@import "../../styles/variables.scss";
-
 @layer utilities {
-  $logo-img-dimension: 30px;
   .header {
-    box-shadow: 0 -1px 0 0 $gray-100 inset;
-
-    &__nav {
-      @extend %wide-container;
-      a {
-        &:not(:last-child) {
-          border-right: 1px solid $gray-100;
-        }
-      }
-    }
-
-    &__logo {
-      color: $primary-color;
-      width: fit-content;
-      strong {
-        text-transform: uppercase;
-      }
-    }
-
     &_active {
-      position: relative;
       &::after {
-        background-color: $orange--300;
         content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -4px;
-        width: 100%;
-        height: 4px;
+        @apply bg-primary-300 absolute inset-x-0 w-full h-h4;
       }
     }
   }

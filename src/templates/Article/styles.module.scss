@@ -1,32 +1,22 @@
-@import "../../styles/variables.scss";
-
 @layer utilities {
-  $font-weight--bold: 700;
-
   .article {
     h1 {
-      font-size: 1.875rem;
-      line-height: 2.25rem;
+      @apply text-3xl;
     }
     h2 {
-      font-size: 1.5rem;
-      line-height: 2rem;
+      @apply text-2xl;
     }
     h3 {
-      font-size: 1.25rem;
-      line-height: 1.75rem;
+      @apply text-lg;
     }
     h4 {
-      font-size: 1.125rem;
-      line-height: 1.75rem;
+      @apply text-base;
     }
     h5 {
-      font-size: 1rem;
-      line-height: 1.5rem;
+      @apply text-sm;
     }
     h6 {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
+      @apply text-xs;
     }
 
     h1,
@@ -35,70 +25,54 @@
     h4,
     h5,
     h6 {
-      font-weight: $font-weight--bold;
-      margin-bottom: 1rem;
+      @apply font-bold mb-4;
     }
 
     p {
-      margin-bottom: 0.5rem;
+      @apply m-2;
     }
 
     ul {
-      list-style: disc;
+      @apply list-disc;
     }
 
     ol {
-      list-style: decimal;
+      @apply list-decimal;
     }
 
     ul,
     ol {
-      margin: 0 1rem;
+      @apply mx-4 my-0;
     }
 
     blockquote {
-      margin: 1rem 0;
-      background-color: $gray-100;
-      padding: 1rem;
-      border-radius: 0.25rem;
+      @apply mx-0 my-4 bg-secondary-100 p-4 rounded;
     }
 
     a {
-      color: $primary-color;
-      text-decoration: underline;
+      @apply text-primary-50 underline;
     }
 
     img {
-      max-width: 100%;
+      @apply max-w-full;
     }
 
     table,
     td,
     th {
-      border: 1px solid $gray-100;
+      @apply border border-solid border-secondary-100;
     }
 
     table {
-      width: 100%;
-      border-collapse: collapse;
-      text-align: center;
+      @apply w-full border-collapse text-center;
     }
 
     hr {
-      margin: 1rem 0;
+      @apply mx-0 my-4;
     }
 
     &__title {
-      color: $gray-300;
       margin-bottom: 0 !important;
-    }
-
-    &__date {
-      color: $gray-300;
-    }
-
-    &__tag {
-      @extend %tag;
     }
   }
 }

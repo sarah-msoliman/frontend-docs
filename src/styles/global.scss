@@ -5,3 +5,15 @@
 * {
   font-family: 'Nunito', sans-serif !important;
 }
+
+.tag {
+  @apply bg-primary-300 text-white uppercase p-tag rounded-sm;
+}
+
+.wide-container {
+  @apply w-full md:w-w77 md:m-mh;
+}
+
+.narrow-container {
+  @apply w-full md:w-w70 md:m-mh lg:w-1/2;
+}

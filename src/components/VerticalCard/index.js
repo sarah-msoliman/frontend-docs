@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 
-import * as styles from "./styles.module.scss";
-
 export default function VerticalCard({ data }) {
   const image = getImage(data.img);
   const renderImage = () => {
@@ -25,9 +23,9 @@ export default function VerticalCard({ data }) {
     }
   };
   return (
-    <div className={`${styles.card}`}>
+    <div className="mb-4 md:w-w47 md:mr-4 lg:w-w31">
       <Link to={"/articles/" + data.slug} className="w-full">
-        <div className={`${styles.card__imgWrapper} w-full`}>
+        <div className="w-full bg-primary-100 pt-imglg relative">
           {renderImage()}
         </div>
       </Link>
@@ -35,10 +33,10 @@ export default function VerticalCard({ data }) {
       <Link to={"/articles/" + data.slug} className="w-full">
         <div className="py-4">
           <div
-            className={`text-sm mb-4 flex items-center ${styles.card__wrapper}`}
+            className="text-sm mb-4 flex items-center"
           >
-            <span className="mr-2 rounded-sm">{data.tag}</span>
-            <p>{data.date}</p>
+            <span className="mr-2 tag">{data.tag}</span>
+            <p className="text-secondary-300">{data.date}</p>
           </div>
           <h3 className="font-bold">{data.title}</h3>
         </div>

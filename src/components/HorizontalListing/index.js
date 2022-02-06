@@ -12,16 +12,16 @@ export default function HorizontalListing({ featured, articles }) {
         {featured.map((item, index) => (
           <FeaturedCard key={index} data={item.frontmatter} />
         ))}
-      </section>
+      </section> 
 
       <h2
-        className={`text-2xl font-bold my-4 ${styles.articleListing__sectionTitle}`}
+        className="text-2xl font-bold my-4 text-primary-50"
       >
         {" "}
         All Articles{" "}
       </h2>
 
-      <section className={`flex flex-wrap ${styles.articleListing__articles}`}>
+      <section className="flex flex-wrap">
         {articles.map((item, index) => (
           <Card key={index} data={item.frontmatter} />
         ))}

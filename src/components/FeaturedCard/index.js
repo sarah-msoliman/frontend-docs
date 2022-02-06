@@ -25,15 +25,15 @@ export default function FeaturedCard({ data }) {
     }
   };
   return (
-    <Link to={"/articles/" + data.slug} className="w-full">
-      <div className={`w-full relative z-0 ${styles.featured}`}>
+    <Link to={"/articles/" + data.slug} className="w-full mb-4">
+      <div className={`w-full relative z-0 text-white pt-imglg ${styles.featured}`}>
         {renderImage()}
         <div className="absolute bottom-0 p-4 z-10">
           <div
-            className={`text-sm mb-4 flex items-center ${styles.featured__wrapper}`}
+            className="text-sm mb-4 flex items-center"
           >
-            <span className="mr-2 rounded-sm">{data.tag}</span>
-            <p>{data.date}</p>
+            <span className="mr-2 tag">{data.tag}</span>
+            <p className="text-secondary-100">{data.date}</p>
           </div>
           <h2 className="font-bold text-lg">{data.title}</h2>
         </div>

@@ -1,24 +1,16 @@
-@import "../../styles//variables.scss";
-
 @layer utilities {
   .articleListing {
     &__featured {
       a {
-        width: 100%;
-        margin-bottom: 1rem;
         &:not(:last-child) {
           @media (min-width: 1024px) {
-            margin-right: 1rem;
+            @apply mr-4;
           }
         }
         @media (min-width: 1024px) {
-          width: 48%;
+          @apply w-w48;
         }
       }
-    }
-
-    &__sectionTitle {
-      color: $primary-color;
     }
   }
 }

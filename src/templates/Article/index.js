@@ -13,12 +13,12 @@ export default function ArticleDetails({ data }) {
     <ArticleLayout>
       <article className={styles.article}>
         <div className="flex items-center">
-          <h1 className={`${styles.article__title}`}>{title}</h1>
-          <span className={`ml-4 text-sm rounded-sm ${styles.article__tag}`}>
+          <h1 className={`${styles.article__title} text-secondary-300`}>{title}</h1>
+          <span className="ml-4 text-sm tag">
             {tag}
           </span>
         </div>
-        <p className={`text-sm mt-2 ${styles.article__date}`}>{date}</p>
+        <p className="text-sm mt-2 text-secondary-300">{date}</p>
         <div className="mt-4" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </ArticleLayout>
