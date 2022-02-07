@@ -1,0 +1,8 @@
+@layer utilities {
+  .featured {
+    &::after {
+      content: "";
+      @apply absolute inset-0 z-0 bg-gradient-to-t from-overlay to-transparent
+    }
+  }
+}
