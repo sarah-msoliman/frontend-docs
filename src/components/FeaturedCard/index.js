@@ -12,14 +12,14 @@ export default function FeaturedCard({ data }) {
         <GatsbyImage
           image={image}
           alt={data.slug}
-          className="h-full w-full absolute inset-0 z-0 rounded"
+          className="h-full w-full inset-0 z-0 rounded img-position"
         />
       );
     } else {
       return (
         <StaticImage
           src="../../../static/images/default.jfif"
-          className="h-full w-full absolute inset-0 z-0"
+          className="h-full w-full inset-0 z-0 img-position"
         />
       );
     }

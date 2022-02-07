@@ -10,14 +10,14 @@ export default function VerticalCard({ data }) {
         <GatsbyImage
           image={image}
           alt={data.slug}
-          className="absolute inset-0 w-full rounded"
+          className="inset-0 w-full rounded img-position"
         />
       );
     } else {
       return (
         <StaticImage
           src="../../../static/images/default.jfif"
-          className="absolute inset-0 w-full rounded"
+          className="inset-0 w-full rounded img-position"
         />
       );
     }

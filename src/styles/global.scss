@@ -17,3 +17,7 @@
 .narrow-container {
   @apply w-full md:w-w70 md:m-mh lg:w-1/2;
 }
+
+.img-position {
+  position: absolute !important;
+}
