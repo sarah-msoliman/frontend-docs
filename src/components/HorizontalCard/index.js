@@ -9,14 +9,14 @@ export default function HorizontalCard({ data }) {
         <GatsbyImage
           image={getImage(data.img)}
           alt={data.slug}
-          className="rounded absolute inset-0"
+          className="rounded absolute inset-0 img-position"
         />
       );
     } else {
       return (
         <StaticImage
           src="../../../static/images/default.jfif"
-          className="rounded absolute inset-0"
+          className="rounded absolute inset-0 img-position"
         />
       );
     }
