@@ -62,4 +62,5 @@ module.exports = {
   siteMetadata: {
     title: "Ninjas' Hub",
   },
+  pathPrefix: "/sarah-msoliman.github.io"
 };
