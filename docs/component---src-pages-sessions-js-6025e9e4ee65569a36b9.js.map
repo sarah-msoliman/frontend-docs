@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-sessions-js-6025e9e4ee65569a36b9.js","mappings":"4KAEe,SAASA,IACtB,OAAO","sources":["webpack://frontend-hub/./src/pages/sessions.js"],"sourcesContent":["import React from \"react\";\r\n\r\nexport default function Sessions() {\r\n  return <div>Hello, Articles</div>;\r\n}\r\n"],"names":["Sessions"],"sourceRoot":""}
