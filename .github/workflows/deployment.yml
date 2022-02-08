@@ -9,7 +9,7 @@ on:
 # Specify the tasks to run when this script gets triggered
 jobs:
   build:
-    runs-on: windows
+    runs-on: ubuntu-latest
 
     # Download our master branch
     steps:
