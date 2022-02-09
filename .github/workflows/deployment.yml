@@ -14,9 +14,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-        run: |
-        git config --global user.name "sarah-msoliman"
-        git config --global user.email "sarah.soliman@elmenus.com"
+      
+      - name: setup user name
+        run: git config --global user.name "sarah-msoliman"
+      
+      - name: setup user email
+        run: git config --global user.email "sarah.soliman@elmenus.com"
       
       - name: Install Node.js
         uses: actions/setup-node@v1
