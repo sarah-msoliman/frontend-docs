@@ -14,9 +14,9 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      
-      - name: Setup Github user
-        uses: fregante/setup-git-user@v1
+        run: |
+        git config --global user.name "sarah-msoliman"
+        git config --global user.email "sarah.soliman@elmenus.com"
       
       - name: Install Node.js
         uses: actions/setup-node@v1
