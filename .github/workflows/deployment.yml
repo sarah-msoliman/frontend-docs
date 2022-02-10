@@ -14,8 +14,12 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+     
+      - name: setup git config name
+        run: git config user.name "GitHub Actions Bot"
+      
+      - name: setup git config email
+        run: git config user.email "<>"
       
       - name: Install Node.js
         uses: actions/setup-node@v1
