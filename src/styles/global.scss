@@ -3,11 +3,15 @@
 @tailwind utilities;
 
 * {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: "Nunito", sans-serif !important;
 }
 
 .tag {
   @apply bg-primary-300 text-white uppercase p-tag rounded-sm;
+}
+
+.layout-container {
+  @apply container bg-secondary-600 text-secondary-700;
 }
 
 .wide-container {
@@ -20,4 +24,15 @@
 
 .img-position {
   position: absolute !important;
+}
+
+.section-title {
+  @apply text-2xl font-bold mb-4 text-center md:text-left relative;
+  @media (min-width: 768px) {
+    @apply pl-8;
+    &::before {
+      content: "";
+      @apply bg-secondary-500 absolute rounded-full h-full w-1 top-0 left-0;
+    }
+  }
 }

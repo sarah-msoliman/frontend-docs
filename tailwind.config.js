@@ -12,7 +12,12 @@ module.exports = {
         },
         secondary: {
           100: "#e7e7e7",
+          200: "#ebeff5",
           300: "#6d6e70",
+          400: "#718098",
+          500: "#e2e8f0",
+          600: "#f8f8f8",
+          700: "#374453"
         },
         white: "#ffffff",
         overlay: "#2126314d"
