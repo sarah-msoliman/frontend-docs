@@ -6,6 +6,10 @@
   font-family: 'Nunito', sans-serif !important;
 }
 
+body {
+  background-color: aquamarine;
+}
+
 .tag {
   @apply bg-primary-300 text-white uppercase p-tag rounded-sm;
 }
