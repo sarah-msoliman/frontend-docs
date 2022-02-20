@@ -61,6 +61,5 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Ninjas' Hub",
-  },
-  pathPrefix: "/frontend-docs"
+  }
 };
