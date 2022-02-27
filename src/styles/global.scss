@@ -11,7 +11,7 @@ body {
 }
 
 .tag {
-  @apply bg-primary-300 text-white uppercase p-tag rounded-sm;
+  @apply text-sm bg-secondary-500 text-secondary-700 py-1 px-4 rounded-lg w-wfit;
 }
 
 .layout-container {

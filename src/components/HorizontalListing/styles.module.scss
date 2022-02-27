@@ -1,16 +1,16 @@
 @layer utilities {
   .articleListing {
     &__featured {
-      a {
-        &:not(:last-child) {
-          @media (min-width: 1024px) {
-            @apply mr-4;
-          }
-        }
-        @media (min-width: 1024px) {
-          @apply w-w48;
-        }
-      }
+      // a {
+      //   &:not(:last-child) {
+      //     @media (min-width: 1024px) {
+      //       @apply mr-4;
+      //     }
+      //   }
+      //   @media (min-width: 1024px) {
+      //     @apply w-w48;
+      //   }
+      // }
     }
   }
 }

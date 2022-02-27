@@ -11,7 +11,7 @@ export default function HorizontalListing({ featured, articles }) {
       <h2 className="section-title">Featured Articles</h2>
       <section className={`flex flex-wrap mb-10 ${styles.articleListing__featured}`}>
         {featured.map((item, index) => (
-          <FeaturedCard key={index} data={item.frontmatter} index={index} />
+          <FeaturedCard key={index} data={item.frontmatter} />
         ))}
       </section>
 

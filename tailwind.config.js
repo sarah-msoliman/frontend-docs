@@ -17,7 +17,8 @@ module.exports = {
           400: "#718098",
           500: "#e2e8f0",
           600: "#f8f8f8",
-          700: "#374453"
+          700: "#374453",
+          800: "#a0aec0"
         },
         white: "#ffffff",
         overlay: "#2126314d"
@@ -35,10 +36,21 @@ module.exports = {
         w47: "47%",
         w48: "48%",
         w70: "70%",
-        w77: "77%"
+        w77: "77%",
+        wfit: "fit-content"
       },
       height: {
-        h4: "4px"
+        h4: "4px",
+        h15: "15rem",
+        h29: "29rem"
+        
+      },
+      minHeight : {
+        h8: "8.3rem",
+        mh15: "15rem"
+      },
+      maxHeight: {
+        mh20: "20rem"
       }
     },
   },

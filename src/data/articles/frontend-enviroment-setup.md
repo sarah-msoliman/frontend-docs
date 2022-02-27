@@ -2,7 +2,7 @@
 title: Frontend Environment Setup
 img: "../../../static/images/Articles/env-setup.png"
 date: "Sep 1, 2021"
-featured: false
+featured: true
 tag: Setup
 slug: frontend-enviroment-setup
 ---
