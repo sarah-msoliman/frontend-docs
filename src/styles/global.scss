@@ -6,12 +6,16 @@
   font-family: "Nunito", sans-serif !important;
 }
 
+body {
+  @apply bg-secondary-600;
+}
+
 .tag {
   @apply bg-primary-300 text-white uppercase p-tag rounded-sm;
 }
 
 .layout-container {
-  @apply container bg-secondary-600 text-secondary-700;
+  @apply container text-secondary-700;
 }
 
 .wide-container {
