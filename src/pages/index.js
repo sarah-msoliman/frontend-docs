@@ -35,7 +35,7 @@ export const query = graphql`
     }
     featured: allMarkdownRemark(
       filter: { frontmatter: { featured: { eq: true } } }
-      limit: 2
+      limit: 3
     ) {
       nodes {
         frontmatter {
@@ -51,9 +51,7 @@ export const query = graphql`
         }
       }
     }
-    articles: allMarkdownRemark(
-      filter: { frontmatter: { featured: { eq: false } } }
-    ) {
+    articles: allMarkdownRemark {
       nodes {
         frontmatter {
           title
