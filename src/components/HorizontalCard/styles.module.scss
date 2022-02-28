@@ -1,0 +1,11 @@
+@layer utilities {
+  .card {
+    &__img {
+      display: none !important;
+      @apply rounded-xl w-2/6 m-2 h-32;
+      @media (min-width: 768px) {
+        display: block !important;
+      }
+    }
+  }
+}
