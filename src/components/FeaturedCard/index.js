@@ -28,7 +28,7 @@ export default function FeaturedCard({ data }) {
     <Link to={"/articles/" + data.slug} className="w-full mb-4 md:w-w31 md:mr-4">
       <article className="relative w-full bg-white rounded-2xl flex md:block md:h-h29">
         {renderImage()}
-        <div className={`relative flex flex-col mx-0 my-auto md:absolute md:h-full md:w-full md:z-10 md:p-8 md:justify-end md:bottom-0 md:rounded-2xl ${styles.featured__body}`}>
+        <div className={`relative flex flex-col p-4 mx-0 my-auto md:absolute md:h-full md:w-full md:z-10 md:p-8 md:justify-end md:bottom-0 md:rounded-2xl ${styles.featured__body}`}>
           <span className="tag mb-2">{data.tag}</span>
           <h2 className="font-bold text-xl mb-2 md:text-white">{data.title}</h2>
           <p className="text-sm text-secondary-800">{data.date}</p>

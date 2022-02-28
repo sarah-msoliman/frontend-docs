@@ -1,8 +1,12 @@
 @layer utilities {
   .featured {
     &__img {
-      @apply h-full min-h-h8 w-2/6 m-2 rounded-2xl;
+      display: none !important;
+      @apply m-2 rounded-2xl;
       @apply md:w-full md:m-0 md:h-full md:min-h-mh15;
+      @media(min-width: 768px) {
+        display: block !important;
+      }
     }
 
     &__body {
