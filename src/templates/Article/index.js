@@ -12,11 +12,9 @@ export default function ArticleDetails({ data }) {
   return (
     <ArticleLayout>
       <article className={styles.article}>
-        <div className="flex items-center">
-          <h1>{title}</h1>
-          <span className="ml-4 text-sm tag">
-            {tag}
-          </span>
+        <div className="flex flex-col md:flex-row md:items-center relative">
+          <h1 className={styles.article__title}>{title}</h1>
+          <span className="md:ml-4 text-sm tag">{tag}</span>
         </div>
         <h3>By: {author}</h3>
         <p className={styles.article__date}>{date}</p>

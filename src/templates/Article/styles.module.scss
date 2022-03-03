@@ -1,6 +1,6 @@
 @layer utilities {
   .article {
-    @apply px-4 md:px-0;
+    @apply p-4 relative bg-white rounded-xl mt-4 md:mt-0 shadow-2xl;
     h1 {
       @apply text-4xl;
     }
@@ -26,7 +26,7 @@
     h4,
     h5,
     h6 {
-      @apply font-bold mb-4;
+      @apply font-bold mt-8 mb-2;
     }
 
     p {
@@ -47,7 +47,16 @@
     }
 
     blockquote {
-      @apply mx-0 my-4 bg-secondary-100 p-4 rounded;
+      @apply mx-0 my-4 bg-secondary-100 p-4 rounded-xl;
+
+      > h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0 !important;
+      }
     }
 
     a {
@@ -55,7 +64,7 @@
     }
 
     img {
-      @apply max-w-full;
+      @apply max-w-full rounded-xl;
     }
 
     table,
@@ -70,6 +79,10 @@
 
     hr {
       @apply mx-0 my-4;
+    }
+
+    &__title {
+      margin: 0 !important;
     }
 
     &__date {
