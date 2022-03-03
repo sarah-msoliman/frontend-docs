@@ -1,96 +1,111 @@
 @layer utilities {
+  %section-link {
+    @apply text-secondary-900 no-underline;
+  }
+
   .article {
     @apply p-4 relative bg-white rounded-xl mt-4 md:mt-0 shadow-2xl;
-    h1 {
-      @apply text-4xl;
-    }
-    h2 {
-      @apply text-2xl;
-    }
-    h3 {
-      @apply text-lg;
-    }
-    h4 {
-      @apply text-base;
-    }
-    h5 {
-      @apply text-sm;
-    }
-    h6 {
-      @apply text-xs;
+
+    &__title {
+      @apply text-3xl font-bold;
     }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      @apply font-bold mt-8 mb-2;
+    &__author {
+      @apply mt-2;
     }
 
-    p {
-      @apply my-2;
+    &__date {
+      @apply text-sm text-secondary-300;
     }
 
-    ul {
-      @apply list-disc;
-    }
+    &__content {
+      h1 {
+        @apply text-4xl;
+      }
+      h2 {
+        @apply text-2xl;
+      }
+      h3 {
+        @apply text-lg;
+      }
+      h4 {
+        @apply text-base;
+      }
+      h5 {
+        @apply text-sm;
+      }
+      h6 {
+        @apply text-xs;
+      }
 
-    ol {
-      @apply list-decimal;
-    }
-
-    ul,
-    ol {
-      @apply mx-8 my-0;
-    }
-
-    blockquote {
-      @apply mx-0 my-4 bg-secondary-100 p-4 rounded-xl;
-
-      > h1,
+      h1,
       h2,
       h3,
       h4,
       h5,
       h6 {
-        margin: 0 !important;
+        @apply font-bold mt-8 mb-2;
+
+        a {
+          @extend %section-link;
+        }
       }
-    }
 
-    a {
-      @apply text-primary-50 underline;
-    }
+      p {
+        @apply my-2;
+      }
 
-    img {
-      @apply max-w-full rounded-xl;
-    }
+      ul {
+        @apply list-disc;
+      }
 
-    table,
-    td,
-    th {
-      @apply border border-solid border-secondary-100;
-    }
+      ol {
+        @apply list-decimal;
+      }
 
-    table {
-      @apply w-full border-collapse text-center;
-    }
+      ul,
+      ol {
+        @apply mx-8 my-0;
+      }
 
-    hr {
-      @apply mx-0 my-4;
-    }
+      blockquote {
+        @apply mx-0 my-4 bg-secondary-100 p-4 rounded-xl;
 
-    &__title {
-      margin: 0 !important;
-    }
+        > h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0 !important;
+        }
 
-    &__author {
-      margin-top: 0.5rem !important;
-    }
+        a {
+          @extend %section-link;
+        }
+      }
 
-    &__date {
-      @apply text-sm text-secondary-300;
+      a {
+        @apply text-primary-50 underline;
+      }
+
+      img {
+        @apply max-w-full rounded-xl;
+      }
+
+      table,
+      td,
+      th {
+        @apply border border-solid border-secondary-100;
+      }
+
+      table {
+        @apply w-full border-collapse text-center;
+      }
+
+      hr {
+        @apply mx-0 my-4;
+      }
     }
   }
 }

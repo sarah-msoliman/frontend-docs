@@ -6,6 +6,10 @@
   font-family: "Nunito", sans-serif !important;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply bg-secondary-600 text-secondary-900 min-w-min;
 }
@@ -39,4 +43,8 @@ body {
       @apply bg-secondary-500 absolute rounded-full h-full w-1 top-0 left-0;
     }
   }
+}
+
+#article-scroll {
+  @apply text-blue-400 no-underline;
 }
