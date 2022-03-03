@@ -31,6 +31,7 @@ export default function FeaturedCard({ data }) {
         <div className={`relative flex flex-col p-4 mx-0 my-auto md:absolute md:h-full md:w-full md:z-10 md:p-8 md:justify-end md:bottom-0 md:rounded-2xl ${styles.featured__body}`}>
           <span className="tag mb-2">{data.tag}</span>
           <h2 className="font-bold text-xl mb-2 md:text-white">{data.title}</h2>
+          <h4 className="font-bold text-base mb-2 md:text-white">By: {data.author}</h4>
           <p className="text-sm text-secondary-800">{data.date}</p>
         </div>
       </article>

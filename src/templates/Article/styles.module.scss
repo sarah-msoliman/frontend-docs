@@ -1,7 +1,8 @@
 @layer utilities {
   .article {
+    @apply px-4 md:px-0;
     h1 {
-      @apply text-3xl;
+      @apply text-4xl;
     }
     h2 {
       @apply text-2xl;
@@ -29,7 +30,7 @@
     }
 
     p {
-      @apply m-2;
+      @apply my-2;
     }
 
     ul {
@@ -42,7 +43,7 @@
 
     ul,
     ol {
-      @apply mx-4 my-0;
+      @apply mx-8 my-0;
     }
 
     blockquote {
@@ -71,8 +72,8 @@
       @apply mx-0 my-4;
     }
 
-    &__title {
-      margin-bottom: 0 !important;
+    &__date {
+      @apply text-sm text-secondary-300;
     }
   }
 }

@@ -18,7 +18,8 @@ module.exports = {
           500: "#e2e8f0",
           600: "#f8f8f8",
           700: "#374453",
-          800: "#a0aec0"
+          800: "#a0aec0",
+          900: "#2d3949"
         },
         white: "#ffffff",
         overlay: "#2126314d"

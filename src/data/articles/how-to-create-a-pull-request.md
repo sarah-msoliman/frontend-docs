@@ -2,19 +2,20 @@
 title: How to Create A Pull Request
 img: "../../../static/images/Articles/pull-requests.jpg"
 date: "Sep 14, 2021"
+author: "Hamed M. Farag"
 featured: true
 tag: Pull Requests
 slug: how-to-create-a-pull-request
 ---
 
-### What is the Pull Request?
+## What is the Pull Request?
 
 **Pull requests** let you tell others about changes you've pushed to a branch. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
 You can open a **Pull Request** at any point during the development process: when you have little
 or no code but want to share some screenshots or general ideas, when you're stuck and need
 help or advice, or when you're ready for someone to review your work.
 
-### How to create a Pull request?
+## How to create a Pull request?
 
 - Choose your branch and the targeted branch (be careful)
 - You need to support your pull request with a suitable title.

@@ -18,6 +18,7 @@ export const query = graphql`
       nodes {
         frontmatter {
           date
+          author
           img {
             childImageSharp {
               gatsbyImageData
