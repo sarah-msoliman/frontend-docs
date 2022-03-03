@@ -2,6 +2,7 @@
 title: Frontend Environment Setup
 img: "../../../static/images/Articles/env-setup.jpg"
 date: "Sep 1, 2021"
+author: "Hamed M. Farag"
 featured: true
 tag: Setup
 slug: frontend-enviroment-setup

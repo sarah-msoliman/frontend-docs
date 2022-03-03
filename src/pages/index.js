@@ -46,6 +46,7 @@ export const query = graphql`
             }
           }
           date
+          author
           slug
           tag
         }
@@ -61,6 +62,7 @@ export const query = graphql`
             }
           }
           date
+          author
           slug
           tag
         }

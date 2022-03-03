@@ -2,6 +2,7 @@
 title: How to Contribute?
 img: "../../../static/images/Articles/contribute.jpg"
 date: "Sep 06, 2021"
+author: "Hamed M. Farag"
 tag: Repositories
 featured: true
 slug: how-to-contribute
@@ -27,9 +28,9 @@ You can contribute to any repository but you should follow the following points 
 5. You should create **two PRs** from your branch to merge your code into the **dev** branch and another one into the **release** branch.
 ![PR Chart](/images/Articles/pull-request-chart.png)
 
-> 🛈 As a Contributor, you can create a PR from your branch to master too if your branch has an important feature, hotfix, or bug fix if it is **stable and bug-free** and **confirmed by the quality team**. 
+> As a Contributor, you can create a PR from your branch to master too if your branch has an important feature, hotfix, or bug fix if it is **stable and bug-free** and **confirmed by the quality team**. 
 
-### For Reviewers
+## For Reviewers
 - Once there is not any comment and you need to merge the **PR**, you should **squash** the commits before the merging, We can achieve that by choosing the “squash and merge“ option as following: 
 ![Squash Commits](/images/Articles/squash-commits.png)
 This option will create one commit and its message will contain all commit messages that will be squashed: 
@@ -39,7 +40,7 @@ This option will create one commit and its message will contain all commit messa
 
 > ⚠️ Don’t use the squash option when you want to merge a PR that merges code from *dev into release* or *release into master* and **vice versa**, for keeping the history.
 
-> 🛈 **Prerequisites**
+> ### **Prerequisites** ###
 > 
 > To create normally a new branch from the master branch as the above points, we need to do the following:
 >
