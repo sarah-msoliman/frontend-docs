@@ -85,6 +85,10 @@
       margin: 0 !important;
     }
 
+    &__author {
+      margin-top: 0.5rem !important;
+    }
+
     &__date {
       @apply text-sm text-secondary-300;
     }

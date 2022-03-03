@@ -16,9 +16,9 @@ export default function ArticleDetails({ data }) {
           <h1 className={styles.article__title}>{title}</h1>
           <span className="md:ml-4 text-sm tag">{tag}</span>
         </div>
-        <h3>By: {author}</h3>
+        <h3 className={styles.article__author}>By: {author}</h3>
         <p className={styles.article__date}>{date}</p>
-        <div className="mt-4" dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="mt-8" dangerouslySetInnerHTML={{ __html: html }} />
       </article>
     </ArticleLayout>
   );

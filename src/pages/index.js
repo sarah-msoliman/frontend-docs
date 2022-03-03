@@ -16,7 +16,7 @@ export default function Home({ data }) {
   return (
     <>
       <Helmet>
-        <title>{title}{subTitle}</title>
+        <title>{title} {subTitle}</title>
       </Helmet>
 
       <HomeLayout>
