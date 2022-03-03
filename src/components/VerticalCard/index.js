@@ -25,11 +25,12 @@ export default function VerticalCard({ data }) {
       to={"/articles/" + data.slug}
       className="w-full md:w-w31 md:mr-4 mb-4 h-full"
     >
-      <article className="w-full bg-white rounded-xl flex h-40 border-l-4 border-primary-50">
+      <article className="w-full bg-white rounded-xl flex h-44 border-l-4 border-primary-50">
         {renderImage()}
         <div className="flex flex-col py-4 px-4 md:px-0">
           <span className="tag mb-2">{data.tag}</span>
           <h3 className="font-bold text-xl mb-2">{data.title}</h3>
+          <h4 className="font-bold text-base mb-2">By: {data.author}</h4>
           <p className="text-sm text-secondary-800">{data.date}</p>
         </div>
       </article>
