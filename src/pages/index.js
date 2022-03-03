@@ -53,7 +53,7 @@ export const query = graphql`
         }
       }
     }
-    articles: allMarkdownRemark {
+    articles: allMarkdownRemark(limit: 3) {
       nodes {
         frontmatter {
           title

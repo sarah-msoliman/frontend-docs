@@ -6,7 +6,6 @@ import FeaturedCard from "../FeaturedCard";
 import * as styles from "./styles.module.scss";
 
 export default function HorizontalListing({ featured, articles }) {
-  var splittedArticles = Object.assign([], articles.slice(0, 3));
   return (
     <>
       <h2 className="section-title">Featured Articles</h2>
@@ -24,7 +23,7 @@ export default function HorizontalListing({ featured, articles }) {
       </div>
 
       <section className="flex flex-wrap mb-10">
-        {splittedArticles.map((item, index) => (
+        {articles.map((item, index) => (
           <Card key={index} data={item.frontmatter} />
         ))}
       </section>
