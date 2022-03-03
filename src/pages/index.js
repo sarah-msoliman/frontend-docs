@@ -10,13 +10,13 @@ import "normalize.css";
 import "../styles/global.scss";
 
 export default function Home({ data }) {
-  const { title } = data.metaData.siteMetadata;
+  const { title, subTitle } = data.metaData.siteMetadata;
   const featuredArticles = data.featured.nodes;
   const articles = data.articles.nodes;
   return (
     <>
       <Helmet>
-        <title>{title}</title>
+        <title>{title}{subTitle}</title>
       </Helmet>
 
       <HomeLayout>
@@ -30,7 +30,8 @@ export const query = graphql`
   query CardsListing {
     metaData: site {
       siteMetadata {
-        title
+        title,
+        subTitle
       }
     }
     featured: allMarkdownRemark(
