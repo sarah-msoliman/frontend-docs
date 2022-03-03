@@ -21,10 +21,10 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center">
-          <Link to="/" className={`relative ${styles.navbar__link}`}>
+          <Link to="/" className={`relative ${styles.navbar__link}`} activeClassName={styles.navbar_active}>
             <p>Home</p>
           </Link>
-          <Link to="/articles"className={`relative ${styles.navbar__link}`}>
+          <Link to="/articles"className={`relative ${styles.navbar__link}`} activeClassName={styles.navbar_active}>
             <p>Articles</p>
           </Link>
           {/* <Link to="/sessions" activeClassName={styles.header_active}>

@@ -6,6 +6,10 @@
             @apply mr-4;
           }
       }
+
+      &_active {
+        @apply text-primary-50;
+      }
     }
   }
   
