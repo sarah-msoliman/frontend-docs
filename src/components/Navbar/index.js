@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
+import * as styles from "./styles.module.scss";
+
 export default function Navbar() {
   return (
     <header className="relative bg-white">
@@ -18,11 +20,12 @@ export default function Navbar() {
           </Link>
         </div>
 
-        <div>
-          <Link to="/articles" className="relative">
-            <p className="text-base font-semibold text-secondary-400">
-              Articles
-            </p>
+        <div className="flex items-center">
+          <Link to="/" className={`relative ${styles.navbar__link}`}>
+            <p>Home</p>
+          </Link>
+          <Link to="/articles"className={`relative ${styles.navbar__link}`}>
+            <p>Articles</p>
           </Link>
           {/* <Link to="/sessions" activeClassName={styles.header_active}>
           <p className="text-base font-semibold p-4">Sessions</p>
