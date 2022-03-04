@@ -1,4 +1,5 @@
 ---
+type: article
 title: Tailwind CSS Guidline
 img: "../../../static/images/Articles/tailwind-css.jpeg"
 date: "March 03, 2022"

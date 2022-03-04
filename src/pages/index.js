@@ -13,6 +13,28 @@ export default function Home({ data }) {
   const { title, subTitle } = data.metaData.siteMetadata;
   const featuredArticles = data.featured.nodes;
   const articles = data.articles.nodes;
+  const sessions = data.sessions.nodes;
+
+  const listingData = [
+    {
+      featured: true,
+      sectionTitle: "Featured Articles",
+      data: featuredArticles
+    },
+    {
+      featured: false,
+      sectionTitle: "All Articles",
+      data: articles,
+      slug: "/articles"
+    },
+    {
+      featured: false,
+      sectionTitle: "All Sessions",
+      data: sessions,
+      slug: "/sessions"
+    }
+  ];
+
   return (
     <>
       <Helmet>
@@ -20,7 +42,7 @@ export default function Home({ data }) {
       </Helmet>
 
       <HomeLayout>
-        <HorizontalListing featured={featuredArticles} articles={articles} />
+        <HorizontalListing data={listingData} />
       </HomeLayout>
     </>
   );
@@ -53,7 +75,23 @@ export const query = graphql`
         }
       }
     }
-    articles: allMarkdownRemark(limit: 3) {
+    articles: allMarkdownRemark(filter: {frontmatter: {type: {eq: "article"}}}, limit: 3) {
+      nodes {
+        frontmatter {
+          title
+          img {
+            childImageSharp {
+              gatsbyImageData(placeholder: BLURRED)
+            }
+          }
+          date
+          author
+          slug
+          tag
+        }
+      }
+    }
+    sessions: allMarkdownRemark(filter: {frontmatter: {type: {eq: "session"}}}, limit: 3) {
       nodes {
         frontmatter {
           title

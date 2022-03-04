@@ -14,7 +14,7 @@ export default function Articles({ data }) {
 
 export const query = graphql`
   query AllArticles {
-    allArticles: allMarkdownRemark {
+    allArticles: allMarkdownRemark(filter: {frontmatter: {type: {eq: "article"}}}) {
       nodes {
         frontmatter {
           date

@@ -1,4 +1,5 @@
 ---
+type: article
 title: How to Contribute?
 img: "../../../static/images/Articles/contribute.jpg"
 date: "Sep 06, 2021"

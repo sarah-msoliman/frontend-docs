@@ -21,15 +21,30 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center">
-          <Link to="/" className={`relative ${styles.navbar__link}`} activeClassName={styles.navbar_active}>
+          <Link
+            to="/"
+            className={`relative ${styles.navbar__link}`}
+            activeClassName={styles.navbar_active}
+          >
             <p>Home</p>
           </Link>
-          <Link to="/articles"className={`relative ${styles.navbar__link}`} activeClassName={styles.navbar_active}>
+
+          <Link
+            to="/articles"
+            className={`relative ${styles.navbar__link}`}
+            activeClassName={styles.navbar_active}
+          >
             <p>Articles</p>
           </Link>
-          {/* <Link to="/sessions" activeClassName={styles.header_active}>
-          <p className="text-base font-semibold p-4">Sessions</p>
-        </Link> */}
+
+          <Link
+            to="/sessions"
+            className={`relative ${styles.navbar__link}`}
+            activeClassName={styles.navbar_active}
+          >
+            <p>Sessions</p>
+          </Link>
+
         </div>
       </nav>
     </header>
