@@ -52,6 +52,9 @@ module.exports = {
       },
       maxHeight: {
         mh20: "20rem"
+      },
+      borderWidth: {
+        b20: "20px"
       }
     },
   },

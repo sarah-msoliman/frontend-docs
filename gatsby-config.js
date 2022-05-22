@@ -58,8 +58,18 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Nunito`,
+        ],
+        display: 'swap'
+      }
+    }
   ],
   siteMetadata: {
-    title: "Ninjas' Hub",
+    title: "Frontend",
+    subTitle: "Hub"
   }
 };

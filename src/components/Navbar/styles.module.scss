@@ -1,0 +1,15 @@
+@layer utilities {
+    .navbar {
+      &__link {
+          @apply text-base font-semibold text-secondary-400;
+          &:not(:last-child) {
+            @apply mr-4;
+          }
+      }
+
+      &_active {
+        @apply text-primary-50;
+      }
+    }
+  }
+  

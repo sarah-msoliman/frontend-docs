@@ -7,7 +7,7 @@ import VerticalListing from "../components/VerticalListing";
 export default function Articles({ data }) {
   return (
     <HomeLayout>
-      <VerticalListing data={data.allArticles.nodes} />
+      <VerticalListing data={data.allArticles.nodes} title="All Articles"/>
     </HomeLayout>
   );
 }
