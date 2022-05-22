@@ -21,7 +21,7 @@ help or advice, or when you're ready for someone to review your work.
 - You need to support your pull request with a suitable title.
 - Description to be as following (below is a template you can copy):
 
-> [^1] [Pull Request Description]
+> <a name="pull-request-description">[Pull Request Description]</a>
 >
 > \### Please check options that are relevant
 >
@@ -59,7 +59,7 @@ help or advice, or when you're ready for someone to review your work.
 >
 > \### Screenshot if it available
 
-- In the first line [^1], you're supposed to write a description to add more clarification to the Reviewer.
+- [In the Pull request description above](#pull-request-description), you're supposed to write a description to add more clarification to the Reviewer.
 - Choose at least one of the choices under **(Please check options that are relevant)**, to mention if we need from quality team to re-test any impact that may be caused by these changes.
 - Mention the business that you applied in this pull request if not mentioned in **JIRA**.
 - Mention if there is any known **bug** or any **impact** to notify the quality team.
